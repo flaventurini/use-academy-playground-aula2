@@ -42,3 +42,32 @@ print(concatenation)
 
 let conc = "Primeiro faça, \(phrase2)" + phrase3
 print(conc)
+
+///Numbers
+///Int
+let year: Int = 2022
+let age: Int = 33
+
+let height: Double = 180.273869176781
+let weight: Float = 180.27386919868276
+
+///Booleanos
+///bool
+let isRaining: Bool = false
+let isFreezing: Bool = true
+
+///Comparações
+let equal = age == year
+print(equal)
+age == year
+age != year
+age > year
+age >= year
+
+// Compara a primeira letra das palavras. No caso, i é "maior" que a:
+"iPhone" > "Android"
+
+///Coleções
+///Array - vetor - sempre começa a contar em 0
+let months = ["Janeiro", "Fevereiro", "Março"]
+print(months[0])
