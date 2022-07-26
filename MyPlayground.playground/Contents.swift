@@ -79,3 +79,33 @@ let week: [Int : String] = [1 : "Segunda", 2 : "Terça", 4 : "Quarta"]
 week[2]
 let colocacao: [String : String] = ["primeiro" : "João", "segundo" : "Maria", "terceiro" : "José"]
 colocacao["segundo"]
+
+///Enum - Enumeration - Enumeração de casos estáticos - banco de dados
+enum Reponse {
+    case success
+    case failure
+}
+
+let success: Reponse = .success
+
+enum Request: String {
+    case success = "Deu bom"
+    case failure = "Deu ruim"
+    case maybe = "Talvez"
+}
+
+let failureString: String = Request.failure.rawValue
+print(failureString)
+
+enum Sequence: Int {
+    case first = 1, second, third, fourth
+/* pode esecrever com a vírgula (acima) ou pode continuar por extenso:
+    case second
+    case third
+    case fourth
+*/
+    
+}
+
+let sequence = Sequence.second.rawValue
+print(sequence)
