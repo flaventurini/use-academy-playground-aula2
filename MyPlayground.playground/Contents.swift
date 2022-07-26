@@ -109,3 +109,6 @@ enum Sequence: Int {
 
 let sequence = Sequence.second.rawValue
 print(sequence)
+
+
+///Condition - Condições
