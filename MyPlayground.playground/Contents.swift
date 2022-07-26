@@ -39,3 +39,6 @@ let phrase3 = "então, faça melhor."
 
 let concatenation = phrase1 + phrase2 + phrase3
 print(concatenation)
+
+let conc = "Primeiro faça, \(phrase2)" + phrase3
+print(conc)
