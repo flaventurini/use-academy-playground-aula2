@@ -69,5 +69,13 @@ age >= year
 
 ///Coleções
 ///Array - vetor - sempre começa a contar em 0
-let months = ["Janeiro", "Fevereiro", "Março"]
+var months = ["Janeiro", "Fevereiro", "Março"]
 print(months[0])
+months.append("Abril")
+print(months)
+
+///Dicionário (acesso com a chave que você informar - pode ser qualquer valor
+let week: [Int : String] = [1 : "Segunda", 2 : "Terça", 4 : "Quarta"]
+week[2]
+let colocacao: [String : String] = ["primeiro" : "João", "segundo" : "Maria", "terceiro" : "José"]
+colocacao["segundo"]
