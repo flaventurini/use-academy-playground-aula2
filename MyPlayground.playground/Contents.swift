@@ -190,3 +190,23 @@ case 50..<75:
 default:
     print("Congrats")
 }
+
+///Estrutura de repetição
+
+let count = 1...10
+print(count)
+
+for number in count {
+    print(number)
+}
+
+for month in months {
+    print("Estamos em \(month)")
+}
+
+///While
+var countingDown = 6
+while countingDown > 0 {
+    print(countingDown)
+    countingDown -= 1 // countingDown = countingDown - 1
+}
