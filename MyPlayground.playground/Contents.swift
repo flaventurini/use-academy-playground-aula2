@@ -86,13 +86,15 @@ enum Reponse {
     case failure
 }
 
-let success: Reponse = .success
+// let success: Reponse = .success
 
 enum Request: String {
     case success = "Deu bom"
     case failure = "Deu ruim"
     case maybe = "Talvez"
 }
+
+let success: Request = .success
 
 let failureString: String = Request.failure.rawValue
 print(failureString)
@@ -112,3 +114,22 @@ print(sequence)
 
 
 ///Condition - Condições
+
+if success == .failure {
+    print(success.rawValue)
+} else if success == .maybe {
+    print(Request.failure.rawValue)
+} else {
+    print(Request.maybe.rawValue)
+}
+
+let myAge = 33
+let yourAge = 8
+
+if myAge > yourAge {
+    print("Maior de idade")
+} else if myAge > 12 {
+    print("Adolescente")
+} else {
+    print("Criança")
+}
