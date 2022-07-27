@@ -133,3 +133,33 @@ if myAge > yourAge {
 } else {
     print("Criança")
 }
+
+if myAge > yourAge && yourAge > 18 {
+    print("Maior de idade")
+} else {
+    print("Menor de idade")
+}
+
+let question: Bool = true
+
+if question {
+    print("Verdade")
+} else {
+    print("Mentira")
+}
+
+if !question {
+    print("Verdade")
+} else {
+    print("Mentira")
+}
+
+///Ternário - usado para coisas pequenas - comparações simples
+///condição ? true : false
+success == .failure ? print("Deu ruim") : print("Deu bom")
+
+let didSuccess = success == .success ? true : false
+print(didSuccess)
+
+///Switch
+
