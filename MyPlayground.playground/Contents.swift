@@ -236,10 +236,25 @@ for numberPar in count {
 }
 
 var impar: [Int] = []
+var par: [Int] = []
 for numberImpar in count {
     if (numberImpar % 2) != 0 {
         impar.append(numberImpar)
+    } else {
+        par.append(numberImpar)
     }
 }
 
 print(impar)
+print(par)
+
+// transformar o código acima em ternário:
+
+impar = []
+par = []
+for numberTeste in count {
+    (numberTeste % 2) == 0 ? par.append(numberTeste) : impar.append(numberTeste)
+}
+
+print(impar)
+print(par)
