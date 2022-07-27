@@ -210,3 +210,36 @@ while countingDown > 0 {
     print(countingDown)
     countingDown -= 1 // countingDown = countingDown - 1
 }
+
+countingDown = 10
+
+repeat {
+    print(countingDown)
+    countingDown -= 1
+} while countingDown > 0
+
+/// Operadores - num
+
+let number1 = 7
+let number2 = 2
+
+number1 + number2
+number1 - number2
+number1 * number2
+number1 / number2
+number1 % number2
+
+for numberPar in count {
+    if (numberPar % 2) == 0 {
+    print(numberPar)
+    }
+}
+
+var impar: [Int] = []
+for numberImpar in count {
+    if (numberImpar % 2) != 0 {
+        impar.append(numberImpar)
+    }
+}
+
+print(impar)
