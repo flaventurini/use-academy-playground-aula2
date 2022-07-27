@@ -258,3 +258,40 @@ for numberTeste in count {
 
 print(impar)
 print(par)
+
+///Funções
+func printInformation() {
+    print("Concentre-se no que é bom, delegue todo o resto")
+}
+
+printInformation()
+
+/* Primeira opção (mais simples):
+
+ func convertDollarToReal(dollar: Float) {
+    let currentDollar: Float = 5.2
+    let real = dollar / currentDollar
+    print(real)
+}
+
+convertDollarToReal(dollar: 10)
+ 
+ */
+
+// Outra forma, mais complexa, para declarar uma função de conversão:
+
+func convertDollarToReal(dollar: Float, currentDollar: Float) -> String {
+    let real = dollar / currentDollar
+    let realString = real.description
+    return realString
+}
+
+let realString = convertDollarToReal(dollar: 20, currentDollar: 6)
+print(realString)
+
+//pode escrever sayHello(name: String); sayHello(to name: String); ou:
+func sayHello(_ name: String) {
+    print("Olá, \(name)")
+}
+
+sayHello("Fernanda")
