@@ -161,5 +161,32 @@ success == .failure ? print("Deu ruim") : print("Deu bom")
 let didSuccess = success == .success ? true : false
 print(didSuccess)
 
+let request: Request = .failure
 ///Switch
+switch request {
+case .success:
+    print("Deu bom")
+case .failure:
+    print("Deu ruim")
+case .maybe:
+    print("Serve")
+}
 
+let name = "Flávia"
+switch name {
+case "Flávia":
+    print("Eu sou a Flávia")
+default:
+    print("Eu não sou a Flávia")
+}
+
+let score = 85
+
+switch score {
+case 0..<50:
+    print("Hoje não, Faro")
+case 50..<75:
+    print("Não fez mais do que seu obrigação")
+default:
+    print("Congrats")
+}
